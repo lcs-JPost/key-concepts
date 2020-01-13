@@ -66,7 +66,7 @@ canvas.borderColor = lightBlue
 canvas.drawEllipse(at: Point(x: 350, y: 200), width: 275, height: 275)
 
 //write down the date
-canvas.drawText(message: "friday \ndecember 4 1987 \n8m show", at: Point(x: 20, y: 540), size: 10 )
+canvas.drawText(message: "friday \ndecember 4 1987 \n8m show", at: Point(x: 15, y: 540), size: 10 )
 
 // write down the second text
 canvas.drawText(message: "with \nsocial disortion\nand opal", at: Point(x: 115, y: 540), size: 10 )
