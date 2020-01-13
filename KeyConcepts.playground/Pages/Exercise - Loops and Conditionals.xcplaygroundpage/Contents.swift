@@ -38,6 +38,39 @@ let neonGreen = Color(hue: 107, saturation: 61, brightness: 93, alpha: 100)
 // HINT: Remember that all shapes have a fill and a border.
 //       You can turn off the fill or border if desired.
 
+
+// make the background orange
+canvas.drawShapesWithBorders = false
+canvas.fillColor = deepOrange
+canvas.drawRectangle(at: Point(x: 0, y: 0), width: 400, height: 600)
+
+// write "sloan"
+canvas.textColor = Color.white
+canvas.drawText(message: "sloan", at: Point(x: 152, y: 425), size: 70)
+
+// draw the pillars
+
+canvas.defaultLineWidth = 50
+
+// using a loop we can seperate the green and blue pillars
+for NumberOfLine in stride(from: 0, through: 400, by: 50) {
+    
+    print(NumberOfLine)
+    //dividing NumberOfLine with 50 gives us a Number that is either even or odd
+    let Number = NumberOfLine/50
+    
+    //if that number is even we draw a green pillar
+    
+    if Number % 2 == 0 {
+        print(2)
+        canvas.lineColor = neonGreen
+        canvas.drawLine(from: Point(x: NumberOfLine - 25, y: 75), to: Point(x: NumberOfLine - 25, y: 400))
+    } else if Number % 2 == 1 {
+        canvas.lineColor = lightBlue
+        canvas.drawLine(from: Point(x: NumberOfLine - 25, y: 0), to: Point(x: NumberOfLine - 25, y: 350))
+    }
+}
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

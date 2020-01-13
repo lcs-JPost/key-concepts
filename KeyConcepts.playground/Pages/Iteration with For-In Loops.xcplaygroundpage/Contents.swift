@@ -35,6 +35,7 @@ for y in stride(from: 0, through: 400, by: 50) {
 
     // Draw each rung
     canvas.drawLine(from: Point(x: 100, y: y), to: Point(x: 200, y: y))
+    print(y)
 }
 /*:
  ### Counting backwards
