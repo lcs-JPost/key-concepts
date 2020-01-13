@@ -61,6 +61,19 @@ canvas.defaultBorderWidth = 100
 canvas.borderColor = lightRed
 canvas.drawEllipse(at: Point(x: 200, y: 200), width: 275, height: 275)
 
+//create the blue circle
+canvas.borderColor = lightBlue
+canvas.drawEllipse(at: Point(x: 350, y: 200), width: 275, height: 275)
+
+//write down the date
+canvas.drawText(message: "friday \ndecember 4 1987 \n8m show", at: Point(x: 20, y: 540), size: 10 )
+
+// write down the second text
+canvas.drawText(message: "with \nsocial disortion\nand opal", at: Point(x: 115, y: 540), size: 10 )
+
+// write down location
+canvas.drawText(message: "hollywood palladium \n6215 sunset blvd. \nlos angeles, california", at: Point(x: 250, y: 540), size: 10 )
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
